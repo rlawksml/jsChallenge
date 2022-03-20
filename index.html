@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- 
+        2 <로컬스토리지> 로그인
+        3 <로컬스토리지> todo list 작성
+    -->
+
+    <body>
+        <div class="container">
+
+            <div class="section-header">
+                <div id="clock" class="clock">
+                    <h2 class="clockYear">----</h2>
+                    <h2 class="clockMonth">--</h2>
+                    <h2 class="clockday">--</h2>
+                    <h2 class="clockTime">00:00:00</h2>
+                    <h2 class="clockDate"></h2>
+
+                    <h2 id="weather"></h2>
+                    <h2 id="name"></h2>
+                </div>
+                
+                <div class="login">
+                    <form id="loginForm" action="">
+                        <input id="id" class="inputId" name="id" type="text" placeholder="ID" value="">
+                        <input id="pw" class="inputPw" name="pw" type="password" placeholder="PW" value="">
+                        <button type="submit" class="loginBtn">Login</button>
+                        <button id="signupBtn" type="button" class="signBtn">signUp</button>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="section-content">
+                    <div class="randomImg">
+                        <h2 class="famousWord"></h2>
+                    </div>
+                    <div class="weather"></div>
+                    <div class="location"></div>
+                    <div class="todoContainer">
+                        <h2 class="title">할일 목록</h2>
+                        <form class="todoForm" action="">
+                            <input id="todoTxt" type="text">
+                            <button id="itemAddButton">추가</button>
+                        </form>
+                        <ul id="todoItem_delete" class="todoList">
+                            
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="section-footer">
+                <button id="changeImgBtn">
+                    Change Image
+                </button>
+            </div>
+
+        </div>
+        <script defer="defer" type="module" src="./index.js"></script>
+    </body>
+</html>
