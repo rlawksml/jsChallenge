@@ -1,130 +1,157 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    outline: none;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
 }
 
-li{
-    list-style: none;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(./src/img/5.jpg);
+button {
+  color: #fff !important;
+  font-size: 15px !important;
 }
 
-.container{
-    width: 1200px;
-    height: 100%;
-    border: 1px dashed red;
+li {
+  list-style: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./src/img/5.jpg);
 }
 
-.section-header{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  width: 1200px;
+  height: 100%;
 }
 
-.clock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
+.section-header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 1px solid seagreen;
+  margin: 10px 0;
 }
 
-.login{
-    display: flex;
-    padding: 0 5px;
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
 }
 
-.login input{
-    margin-right: 10px;
-    padding: 0 10px;
-    border-radius: 3px;
-    border: 1px solid #2c2c2c;
-    font-size: 12px;
+.clock h2,
+.lanloninfo {
+  color: rgb(0, 86, 172);
+  background-color: rgba(255, 255, 255, 0.473);
+  margin: 10px;
+  padding: 0 10px;
+  border-radius: 10px;
 }
 
-.login input:focus::placeholder{
-    color:transparent;
+.login {
+  display: flex;
+  padding: 0 5px;
 }
 
-button{
-    border: 1px solid #222;
-    background-color: transparent;
-    padding: 0 10px;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 10px;
+.login input {
+  margin-right: 10px;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid #2c2c2c;
+  font-size: 12px;
 }
 
-button:hover{
-    cursor: pointer;
-    opacity: 0.7;
+.login input:focus::placeholder {
+  color: transparent;
 }
 
-.section-content{
-    border: 1px solid green;
-    height: 800px;
-    width: 100%;
-    top: 0;
-    left: 0;
+button {
+  border: 1px solid #222;
+  background-color: transparent;
+  padding: 0 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 10px;
 }
 
-.section-footer{
-    height: 30px
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
-.todoContainer{
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
+.section-content {
+  height: 800px;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-
-.todoContainer .title{
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 10px;
+.section-footer {
+  height: 30px;
 }
 
-.todoContainer .todoForm{
-    width: 300px;
-    display: flex;
-    justify-content: center;
-}
-.todoForm input{
-    margin-right: auto;
-    flex: 1 1 auto;
+.todoContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  border: 1px solid salmon;
+  border-radius: 25px;
 }
 
-.todoForm button{
-    margin-left: 10px;
+.todoContainer .title {
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid darkgoldenrod;
+  color: darkorange;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.todoList{
-    padding: 30px;
+.todoContainer .todoForm {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.todoForm input {
+  margin-right: auto;
+  flex: 1 1 auto;
 }
 
-.todoList .todoItem{
-    display: flex;
+.todoForm button {
+  margin-left: 10px;
 }
 
-.todoItem span{
-    margin-right: auto;
-    width: 200px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
+.todoList {
+  padding: 30px;
 }
-.todoItem button{
-    margin: 1.5px;
+
+.todoList .todoItem {
+  display: flex;
+}
+
+.todoItem span {
+  margin-right: auto;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.todoItem button {
+  margin: 1.5px;
+}
+
+.logout {
+  display: none;
 }
