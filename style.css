@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url(./src/img/5.jpg);
+  background-image: url(./src/img/0.jpg);
 }
 
 .container {
@@ -86,7 +86,6 @@ button:hover {
 }
 
 .section-content {
-  height: 800px;
   width: 100%;
   top: 0;
   left: 0;
@@ -154,4 +153,15 @@ button:hover {
 
 .logout {
   display: none;
+}
+
+.desc {
+  text-align: center;
+  background-color: rgba(59, 59, 59, 0.596);
+  color: rgb(223, 134, 19);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
 }
